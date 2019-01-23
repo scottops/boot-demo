@@ -1,6 +1,12 @@
 package com.lh.boot.service;
 
+import com.lh.boot.entity.TbPerson;
+
+import java.util.List;
+
 public interface IBootService {
 
-    public  void  sayHello( String msg ) throws Exception;
+    public List<TbPerson> findAll() throws Exception;
+
+
 }
