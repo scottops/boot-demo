@@ -24,7 +24,7 @@ public class BootController {
 
 
     @RequestMapping("/test")
-    public  String    hello() throws Exception {
+    public  Object    hello() throws Exception {
         Foo foo = new Foo();
         foo.setId(1000);
         foo.setText("abcd");
@@ -34,7 +34,7 @@ public class BootController {
         List<TbPerson> data = iBootService.findAll();
 
         System.out.println(data);
-        return  "hello";
+        return  data;
     }
 
 }
