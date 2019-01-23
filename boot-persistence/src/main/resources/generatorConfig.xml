@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<!-- 根节点元素 -->
+<generatorConfiguration>
+    <!--配置驱动路径-->
+   <classPathEntry location="F:\repo\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar" />
+    <!--  配置上下文  -->
+    <context id="context1" targetRuntime="Mybatis3Simple">
+        <commentGenerator>
+            <!-- 是否去除生成的注释 true:去掉  false:保留 -->
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <!-- 连接信息配置
+        connectionURL:	连接url
+        driverClass:	驱动
+        userId：			用户名
+        password：		密码
+        -->
+        <jdbcConnection connectionURL="jdbc:mysql:///spring" driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
+        <!-- 生成模型配置
+          targetPackage：目标类路径（包名）
+          targetProject：工程路径（项目文件夹路径）
+        -->
+        <javaModelGenerator targetPackage="com.lh.boot.entity" targetProject="F:\learn_wp3\boot-demo\boot-domain\src\main\java" />
+        <!-- 生成Mapper文件配置
+           targetPackage：Mapper文件类路径
+           targetProject：工程路径
+         -->
+        <sqlMapGenerator targetPackage="mapper" targetProject="src\main\resources" />
+        <!-- 生成 Dao 配置
+            targetPackage：Dao接口文件类路径
+            targetProject：工程路径
+        -->
+        <javaClientGenerator targetPackage="com.lh.boot.dao" targetProject="src\main\java"  type="XMLMAPPER" />
+
+        <!-- 指定需要逆向工程的表
+           tableName：目标表       %表示全部
+         -->
+        <table   tableName="%">
+
+        </table>
+    </context>
+</generatorConfiguration>
