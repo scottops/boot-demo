@@ -7,7 +7,7 @@
     <groupId>com.lh</groupId>
     <artifactId>boot-demo</artifactId>
     <packaging>pom</packaging>
-    <version>${demo.version}</version>
+    <version>1.0-SNAPSHOT</version>
     <modules>
         <!-- 实体类模块 -->
         <module>boot-domain</module>
@@ -71,32 +71,6 @@
                  <groupId>org.springframework.boot</groupId>
                  <artifactId>spring-boot-starter-jdbc</artifactId>
                  <version>${boot.version}</version>
-             </dependency>
-
-             <dependency>
-                 <groupId>com.lh</groupId>
-                 <artifactId>boot-service</artifactId>
-                 <version>${demo.version}</version>
-             </dependency>
-             <dependency>
-                 <groupId>com.lh</groupId>
-                 <artifactId>boot-domain</artifactId>
-                 <version>${demo.version}</version>
-             </dependency>
-             <dependency>
-                 <groupId>com.lh</groupId>
-                 <artifactId>boot-persistence</artifactId>
-                 <version>${demo.version}</version>
-             </dependency>
-             <dependency>
-                 <groupId>com.lh</groupId>
-                 <artifactId>boot-service</artifactId>
-                 <version>${demo.version}</version>
-             </dependency>
-             <dependency>
-                 <groupId>com.lh</groupId>
-                 <artifactId>boot-web</artifactId>
-                 <version>${demo.version}</version>
              </dependency>
 
          </dependencies>

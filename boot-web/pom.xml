@@ -7,6 +7,7 @@
         <artifactId>boot-demo</artifactId>
         <groupId>com.lh</groupId>
         <version>1.0-SNAPSHOT</version>
+
     </parent>
     <groupId>com.lh</groupId>
     <artifactId>boot-web</artifactId>
@@ -38,6 +39,7 @@
         <dependency>
             <groupId>com.lh</groupId>
             <artifactId>boot-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
     <build>
